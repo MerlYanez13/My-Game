@@ -3,7 +3,8 @@ class Wall {
       var options = {
           'restitution':0.8,
           'friction':1.3,
-          'density':1.0
+          'density':1.0,
+          isStatic:true
       }
       this.body = Bodies.rectangle(x, y, 20, height, options);
       this.width = 20;
