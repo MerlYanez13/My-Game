@@ -22,6 +22,10 @@ class Player {
       fill("blue");
       ellipse(0, 0, this.width, this.height);
       pop();
+      //console.log (pos);
+      if(pos.x<128 && pos.y>550){
+        gamestate="won";
+      }
     }
     move(x,y){
         Matter.Body.applyForce(this.body,this.body.position,{x:x,y:y})
