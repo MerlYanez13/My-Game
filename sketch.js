@@ -7,12 +7,13 @@ var gamestate="start";
 var level=1;
 var currentLevel;
 
+
 function setup(){
     var canvas = createCanvas(600,600);
     engine = Engine.create();
     world = engine.world;
     if(level==1){
-        currentLevel=new Level2();
+        currentLevel=new Level1();
     }
     player=new Player (50,50,20);
 }
@@ -28,23 +29,44 @@ function draw(){
         textSize(35);
         fill("white")
         text("Level Complete",250,300)
-        level+=1;
+        
     }
+    fill("white");
+    rectMode(CENTER);
+    rect(90,535,140,110);
 }
 function keyPressed(){
     if(gamestate=="start"){
         if(keyCode==LEFT_ARROW){
-            player.move(-15,0);
+            player.move(-20,0);
         }
         else if(keyCode==RIGHT_ARROW){
-            player.move(15,0);
+            player.move(20,0);
         }
         else if(keyCode==UP_ARROW){
-            player.move(0,-15);
+            player.move(0,-20);
         }
         else if(keyCode==DOWN_ARROW){
-            player.move(0,+15);
+            player.move(0,+20);
         }
+        
     }
-    
+    if(gamestate=="won"&&keyCode==32){
+        level+=1;
+        switch(level){
+            case 2:currentLevel.destroy();
+                currentLevel=new Level2();
+            break;
+            case 3:currentLevel=new Level3();
+            break;
+            case 4:currentLevel=new Level4();
+            break;
+            case 5:currentLevel=new Level5();
+            break;
+            default:break;
+        }
+        gamestate="start";
+        Matter.Body.setPosition(player.body,{x:50,y:50})
+    }
+
 }
