@@ -53,8 +53,9 @@ function keyPressed(){
     }
     if(gamestate=="won"&&keyCode==32){
         level+=1;
+        currentLevel.destroy();
         switch(level){
-            case 2:currentLevel.destroy();
+            case 2:
                 currentLevel=new Level2();
             break;
             case 3:currentLevel=new Level3();
@@ -64,6 +65,7 @@ function keyPressed(){
             case 5:currentLevel=new Level5();
             break;
             default:break;
+
         }
         gamestate="start";
         Matter.Body.setPosition(player.body,{x:50,y:50})
