@@ -12,19 +12,18 @@ class Level3{
         this.maze14=new Wall (170,575,70,PI,"yellow");
         this.maze11=new Wall (80,470,200,PI/2,"yellow");
         
-        this.maze3=new Wall (390,100,270,PI/2,"yellow");
-        this.maze4=new Wall (130,180,300,PI/2,"yellow");
-        this.maze5=new Wall (350,310,400,PI,"yellow");
+        this.maze3=new Wall (230,190,200,PI/-5,"yellow");
+        this.maze4=new Wall (150,215,270,PI/-5,"yellow");
+        this.maze5=new Wall (350,210,200,PI,"yellow");
         this.maze6=new Wall (550,180,200,PI/2,"yellow");
-        this.maze7=new Wall (310,270,450,PI/2,"yellow");
+        this.maze7=new Wall (450,270,110,PI/2,"yellow");
         this.maze9=new Wall (550,370,250,PI/2,"yellow");
-        this.maze11=new Wall (80,470,200,PI/2,"yellow");
         this.maze10=new Wall (10,540,150,PI,"yellow");
-        this.maze12=new Wall (120,360,250,PI/2,"yellow");
-        this.maze13=new Wall (390,470,260,PI/2,"yellow");
-        this.maze15=new Wall (460,575,60,PI,"yellow");
-        this.maze19=new Wall (170,225,70,PI,"yellow");
-        this.maze20=new Wall (170,225,70,PI,"yellow");
+        this.maze12=new Wall (375,380,100,PI/2,"yellow");
+        this.maze13=new Wall (390,520,210,PI/2,"yellow");
+        this.maze15=new Wall (70,300,100,PI/2,"yellow");
+        this.maze19=new Wall (310,120,70,PI/2,"yellow");
+        this.maze20=new Wall (240,400,200,PI/2,"yellow");
     }
     display(){
         //doesn't change

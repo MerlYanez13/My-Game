@@ -28,7 +28,8 @@ function draw(){
     if(gamestate=="won"){
         textSize(35);
         fill("white")
-        text("Level Complete",250,300)
+        text("Level Complete",170,300)
+        text("(Press Space to Continue)",100,400)
         
     }
     fill("white");

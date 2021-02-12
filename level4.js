@@ -15,17 +15,16 @@ class Level4{
         
         this.maze3=new Wall (390,100,270,PI/2,"orange");
         this.maze4=new Wall (130,180,300,PI/2,"orange");
-        this.maze5=new Wall (350,310,400,PI,"orange");
+        this.maze5=new Wall (350,245,270,PI,"orange");
         this.maze6=new Wall (550,180,200,PI/2,"orange");
-        this.maze7=new Wall (310,270,450,PI/2,"orange");
+        this.maze7=new Wall (310,270,280,PI/2,"orange");
         this.maze9=new Wall (550,370,250,PI/2,"orange");
-        this.maze11=new Wall (80,470,200,PI/2,"orange");
         this.maze10=new Wall (10,540,150,PI,"orange");
         this.maze12=new Wall (120,360,250,PI/2,"orange");
-        this.maze13=new Wall (390,470,260,PI/2,"orange");
+        this.maze13=new Wall (340,470,320,PI/2,"orange");
         this.maze15=new Wall (460,575,60,PI,"orange");
-        this.maze19=new Wall (170,225,70,PI,"orange");
-        this.maze20=new Wall (170,225,70,PI,"orange");
+        this.maze19=new Wall (170,235,90,PI,"orange");
+        this.maze20=new Wall (300,500,75,PI,"orange");
     }
     display(){
         //doesn't change
