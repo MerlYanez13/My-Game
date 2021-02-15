@@ -28,8 +28,7 @@ function draw(){
     if(gamestate=="won"){
         textSize(35);
         fill("white")
-        text("Level Complete",170,300)
-        text("(Press Space to Continue)",100,400)
+        text("Level Complete",250,300)
         
     }
     fill("white");
@@ -54,9 +53,8 @@ function keyPressed(){
     }
     if(gamestate=="won"&&keyCode==32){
         level+=1;
-        currentLevel.destroy();
         switch(level){
-            case 2:
+            case 2:currentLevel.destroy();
                 currentLevel=new Level2();
             break;
             case 3:currentLevel=new Level3();
@@ -66,7 +64,6 @@ function keyPressed(){
             case 5:currentLevel=new Level5();
             break;
             default:break;
-
         }
         gamestate="start";
         Matter.Body.setPosition(player.body,{x:50,y:50})

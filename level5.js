@@ -13,18 +13,18 @@ class Level5{
         this.maze11=new Wall (80,470,200,PI/2,"purple");
         
         this.maze3=new Wall (390,100,270,PI/2,"purple");
-        this.maze4=new Wall (130,180,300,PI/2,"purple");
-        this.maze5=new Wall (350,310,400,PI,"purple");
-        this.maze6=new Wall (550,180,200,PI/2,"purple");
-        this.maze7=new Wall (310,270,450,PI/2,"purple");
+        this.maze4=new Wall (130,180,90,PI/3,"purple");
+        this.maze5=new Wall (480,220,100,PI/-5,"purple");
+        this.maze6=new Wall (350,180,200,PI/2,"purple");
+        this.maze7=new Wall (310,270,400,PI/2,"purple");
         this.maze9=new Wall (550,370,250,PI/2,"purple");
         this.maze11=new Wall (80,470,200,PI/2,"purple");
         this.maze10=new Wall (10,540,150,PI,"purple");
         this.maze12=new Wall (120,360,250,PI/2,"purple");
         this.maze13=new Wall (390,470,260,PI/2,"purple");
         this.maze15=new Wall (460,575,60,PI,"purple");
-        this.maze19=new Wall (170,225,70,PI,"purple");
-        this.maze20=new Wall (170,225,70,PI,"purple");
+        this.maze19=new Wall (320,400,170,PI/-3,"purple");
+        this.maze20=new Wall (170,315,70,PI,"purple");
     }
     display(){
         //doesn't change
@@ -50,27 +50,5 @@ class Level5{
         this.maze15.display();
         this.maze19.display();
         this.maze20.display();
-    }
-    destroy(){
-        this.maze1.removeBody();
-        this.maze2.removeBody();
-        this.maze3.removeBody();
-        this.maze4.removeBody();
-        this.maze5.removeBody();
-        this.maze6.removeBody();
-        this.maze7.removeBody();
-        this.maze8.removeBody();
-        this.maze9.removeBody();
-        this.maze10.removeBody();
-        this.maze11.removeBody();
-        this.maze12.removeBody();
-        this.maze13.removeBody();
-        this.maze14.removeBody();
-        this.maze15.removeBody();
-        this.maze16.removeBody();
-        this.maze17.removeBody();
-        this.maze18.removeBody();
-        this.maze19.removeBody();
-        this.maze20.removeBody();
     }
 }

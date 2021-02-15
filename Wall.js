@@ -24,8 +24,5 @@ class Wall {
       rect(0, 0, this.width, this.height);
       pop();
     }
-    removeBody(){
-      World.remove(world,this.body);
-    }
   };
   
